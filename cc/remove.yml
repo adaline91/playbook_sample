@@ -1,0 +1,7 @@
+---
+ - hosts: docker
+ - name : remove http
+   apt:
+       name: httpd
+       state: absent
+...

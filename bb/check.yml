@@ -1,0 +1,6 @@
+---
+ - hosts:webrtc
+ - name: run cp
+   shell: /usr/bin/cp ~scyoon/test.txt ~scyoon/test2.txt
+   ignore_errors: True
+...

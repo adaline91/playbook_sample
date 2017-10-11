@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: Ansible apt install packages example
+      apt:
+        name: zip
+        state: present 
+        update_cache: true

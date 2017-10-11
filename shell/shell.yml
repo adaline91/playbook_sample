@@ -1,0 +1,15 @@
+---
+
+- hosts: all
+  gather_facts: true
+  tasks:
+    - name: Run the specified shell command
+#      shell: ls >> test.txt
+      shell: ls 
+      args:
+       executable: /bin/bash 
+      register: result
+
+    - name: Display the outcome
+      debug:
+        msg: '{{ result }}'
